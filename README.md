@@ -42,38 +42,6 @@ go build
 ./remote-executor-client -s localhost -t
 ```
 
-## Rust Implementation
-
-### Building
-
-```bash
-# Build server
-cd in_rust/remote-executer-server
-cargo build
-
-# Build client
-cd in_rust/remote-executer-client
-cargo build
-```
-
-### Usage
-
-1. Start the server:
-```bash
-cd in_rust/remote-executer-server
-cargo run
-```
-
-2. Use the client:
-```bash
-cd in_rust/remote-executer-client
-# For single command execution
-cargo run -- -s localhost -c "ls -la"
-
-# For interactive terminal session
-cargo run -- -s localhost -t
-```
-
 ## Security Note
 
 The default API key is "your-secret-key-12345". For production use, please change this to a secure value.
